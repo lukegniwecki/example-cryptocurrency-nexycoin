@@ -1,2 +1,2 @@
 # NEXYCOIN 
-Example Cryptocurrency: Nexycoin 
+Example Cryptocurrency
