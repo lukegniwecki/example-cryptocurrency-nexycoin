@@ -1,2 +1,2 @@
 # Nexycoin
-Example Cryptocurrency
+Example Cryptocurrency using my other general blockchain repo
