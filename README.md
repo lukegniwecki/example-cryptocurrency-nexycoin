@@ -1,8 +1,7 @@
 # Nexycoin
 Example Cryptocurrency elaborating on my [general-purpose-blockchain](https://github.com/lukegniwecki/general-purpose-blockchain) repo.
 
-To turn a general prupose blockchain into a cryptocurrency we have to add
-`transactions` 
+The code includes addition of `transactions` as well as a few new classess and functions. 
 
 ## Required
 Python 3.6
