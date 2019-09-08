@@ -9,7 +9,7 @@ Python 3.6
 Flask: install in terminal 
 ```pip install Flask==0.12.2```
 
-- Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart/```
+Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart/```
 
 Requests: install in terminal
 ```pip install requests==2.18.4```
