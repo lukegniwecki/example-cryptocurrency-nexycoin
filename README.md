@@ -18,16 +18,33 @@ Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart
 ```https://www.getpostman.com```
 
 ## Libraries 
-List of libraries imported into python and used throughout the codebase:
+Libraries imported into Python and used throughout the codebase:
 - datetime - needed for time stamping blocks in Unix time timestamp
 - hashlib - used to hash the blocks
 - json - used to encode the blocks before they are hashed
 - Flask - Flask class from the flask library used to create a web application 
 - jsonify - used to return messages in postman when requesting the state of the blockchain or key info of the block that has been mined 
-- requests (Flask) - added to flask libraries. This module is needed to use its GET json function to connect the nodes on decentralised network.
+- requests (Flask) - added to flask libraries. This module is needed to use a GET json function to connect the nodes on decentralised network.
 - requests (Python) - required to check that all nodes have the same chain which will be used to apply the consensus
 - uuid4 (from uuid) -  equired to create an address for each node on the network
 - urlparse (from urllib.parse) - needed to parse the URL of each of the nodes
+
+## Converting a Generic Blockchain into a Cryptocurrency 
+**Adding Transactions**
+
+`self.transactions = []` - list of transactions to be created in the init method and before the `self.create_block` function
+
+`add_transaction(self, sender, receiver, amount)` - method for adding transactions
+
+**Creating Consensus**
+
+`self.nodes = set()` - node for the init method (must be an empty set). A prerequisite for creating the consensus
+
+`add_node(self, address)` - add node method for adding a new node to the network 
+
+`replace_chain(self):` - required to apply the consensus by replacing chain with the longest one. The method contains `self` as the function is called in a specific node. 
+
+## Setting Up Nodes in Postman
 
 ## Requests 
 Requests used to query the blockchain in Postman once the application is running on Flask:
