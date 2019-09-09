@@ -59,7 +59,7 @@ The above method contains *self* as the function is called in a specific node.
 ## Testing 
 
 ## Requests 
-Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*nexycoin_node_1*). 
+Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
 
 ### GET
 
