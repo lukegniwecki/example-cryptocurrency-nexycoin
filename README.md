@@ -79,6 +79,11 @@ Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/exampl
 
 - **Node 3:** *[nexycoin_node_1_5003.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_3_5003.py)*
 
+Connecting nodes
+addign transactions  
+Mining blocks  
+Replacing chain
+
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
 
