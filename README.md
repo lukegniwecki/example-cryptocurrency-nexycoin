@@ -18,7 +18,7 @@ Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart
 ```https://www.getpostman.com```
 
 ## Libraries 
-List of libraries used throughout the codebase:
+List of libraries imported into python and used throughout the codebase:
 - datetime - needed for time stamping blocks in Unix time timestamp
 - hashlib - used to hash the blocks
 - json - used to encode the blocks before they are hashed
