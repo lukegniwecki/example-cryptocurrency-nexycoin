@@ -4,7 +4,7 @@ Example Cryptocurrency elaborating on my [general-purpose-blockchain](https://gi
 The code includes addition of `transactions` as well as a few new classess and functions (see below). 
 
 ## Required
-Python 3.6
+**Python 3.6**
 
 **Flask:** install in terminal 
 ```pip install Flask==0.12.2```
@@ -17,7 +17,8 @@ Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart
 **Postman HTTP Client:**
 ```https://www.getpostman.com```
 
-## Libraries
+## Libraries 
+List of libraries used throughout the codebase:
 - datetime - needed for time stamping blocks in Unix time timestamp
 - hashlib - used to hash the blocks
 - json - used to encode the blocks before they are hashed
