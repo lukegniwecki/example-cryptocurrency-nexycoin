@@ -59,17 +59,17 @@ The above method contains *self* as the function is called in a specific node.
 ## Testing 
 
 ## Requests 
-Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask.
+Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
 
 ### GET
 
-**Get Chain:** http://127.0.0.1:5000/get_chain 
+**Get Chain:** http://127.0.0.1:5001/get_chain 
 - Queries the current state of blockchain
 
-**Mine Block:** http://127.0.0.1:5000/mine_block
+**Mine Block:** http://127.0.0.1:5001/mine_block
 - Mines a new block
 
-**Is Chain Valid:** http://127.0.0.1:5000/is_chain_valid 
+**Is Chain Valid:** http://127.0.0.1:5001/is_chain_valid 
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks
 
 ### POST  
