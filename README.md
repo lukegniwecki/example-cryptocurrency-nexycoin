@@ -31,7 +31,7 @@ Libraries imported into Python and used throughout the codebase:
 - uuid4 (from uuid) -  equired to create an address for each node on the network
 - urlparse (from urllib.parse) - needed to parse the URL of each of the nodes
 
-## Converting a Generic Blockchain into a Cryptocurrency 
+## Converting the Generic Blockchain into a Cryptocurrency 
 **Adding Transactions**
 
 `self.transactions = []` - list of transactions to be created in the init method and before the `self.create_block` function
