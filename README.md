@@ -56,7 +56,7 @@ The above method contains *self* as the function is called in a specific node.
 
 *amount* = mining reward
 
-**4. Creating Uinque Node Address**
+**4. Creating Unique Node Address**
 
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
