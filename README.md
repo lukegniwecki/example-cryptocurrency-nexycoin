@@ -3,6 +3,8 @@ Example Cryptocurrency elaborating on my [general-purpose-blockchain](https://gi
 
 The code includes addition of `transactions` as well as a few new classess and functions (see below). 
 
+The currency uses the Proof of Work consensus mechanism. 
+
 ## Required
 **Python 3.6**
 
