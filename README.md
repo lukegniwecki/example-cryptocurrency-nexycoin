@@ -40,16 +40,23 @@ Libraries imported into Python and used throughout the codebase:
 
 **Creating Consensus**
 
-`self.nodes = set()` - node for the init method (must be an empty set). A prerequisite for creating the consensus
+`self.nodes = set()` - node for the init method (must be an empty set)
 
 `add_node(self, address)` - add node method for adding a new node to the network 
 
-`replace_chain(self):` - required to apply the consensus by replacing chain with the longest one. The method contains *self* as the function is called in a specific node. 
+`replace_chain(self):` - required to apply the consensus and replace the chain with the longest one 
+
+The above method contains *self* as the function is called in a specific node.
 
 ## Setting Up Nodes in Postman
 
+
+## Testing Nexycoin
+
 ## Requests 
-Requests used to query the blockchain in Postman once the application is running on Flask:
+Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask.
+
+### GET
 
 **Get Chain** 
 - Queries the current state of blockchain: http://127.0.0.1:5000/get_chain
@@ -59,4 +66,6 @@ Requests used to query the blockchain in Postman once the application is running
 
 **Is Chain Valid** 
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks: http://127.0.0.1:5000/is_chain_valid 
+
+### POST  
 
