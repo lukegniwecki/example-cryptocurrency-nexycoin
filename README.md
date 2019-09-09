@@ -33,13 +33,11 @@ Libraries imported into Python and used throughout the codebase:
 
 ## Converting a Blockchain into a Cryptocurrency 
 **Adding Transactions**
-
 `self.transactions = []` - list of transactions to be created in the *init* method and before the `self.create_block` function
 
 `add_transaction(self, sender, receiver, amount)` - method for adding transactions
 
 **Creating Consensus**
-
 `self.nodes = set()` - node for the init method (must be an empty set)
 
 `add_node(self, address)` - add node method for adding a new node to the network 
@@ -49,17 +47,22 @@ Libraries imported into Python and used throughout the codebase:
 The above method contains *self* as the function is called in a specific node.
 
 **Specifying Mining Reward**
-
 `blockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function 
 
 *receiver* = miner 
 *amount* = mining reward
 
 ## Setting Up Nodes (Decentralising Nexycoin)
-
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
-## Testing 
+## Running the Blockchain and Creating Transactions
+The included *.json* files contain (1) example node addresses (*nodes.json*) and the format of the transaction (*trasnactions.json*). 
+
+There are three nodes in this example crypto currecny using the following flask addresses and ports: 
+
+**Node 1:** http://127.0.0.1:5001/ 
+**Node 2:** http://127.0.0.1:5002/ 
+**Node 3:** http://127.0.0.1:5003/  
 
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
