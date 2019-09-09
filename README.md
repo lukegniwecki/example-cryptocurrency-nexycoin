@@ -67,7 +67,7 @@ There are three nodes in this example cryptocurrency. The use the following Flas
 
 - **Node 3:** http://127.0.0.1:5003/  
 
-Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the currecny, mine blocks, send transactions and apply the consennsus: 
+Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the Nexycoin, mine blocks, send transactions and apply the consennsus: 
 
 - **Node 1:** *[nexycoin_node_1_5001.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_1_5001.py)*
 
