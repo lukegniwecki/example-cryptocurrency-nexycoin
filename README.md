@@ -50,7 +50,7 @@ The above method contains *self* as the function is called in a specific node.
 
 **Updating the Mining Function**
 
-`lockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function. Receiver is the *miner* whereas *amount* is the mining reward. 
+`blockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function. *Receiver* is the miner whereas *amount* is the mining reward. 
 
 ## Setting Up Nodes (Decentralising Nexycoin)
 
