@@ -63,17 +63,16 @@ Postman requests used to query the blockchain, add transactions and apply the co
 
 ### GET
 
-**Get Chain** 
-- Queries the current state of blockchain: http://127.0.0.1:5000/get_chain
+**Get Chain:** http://127.0.0.1:5000/get_chain 
+- Queries the current state of blockchain
 
-**Mine Block**
-- Mines a new block: http://127.0.0.1:5000/mine_block
+**Mine Block:** http://127.0.0.1:5000/mine_block
+- Mines a new block
 
-**Is Chain Valid** 
-- Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks: http://127.0.0.1:5000/is_chain_valid 
+**Is Chain Valid:** http://127.0.0.1:5000/is_chain_valid 
+- Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks
 
 ### POST  
 
-**Add Transaction**
-- Announces the transaction on the blockchain: http://127.0.0.1:5001/add_transaction 
-
+**Add Transaction:** http://127.0.0.1:5001/add_transaction 
+- Announces the transaction on the blockchain
