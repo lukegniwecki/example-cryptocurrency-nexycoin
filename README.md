@@ -34,7 +34,7 @@ Libraries imported into Python and used throughout the codebase:
 ## Converting a Blockchain into a Cryptocurrency 
 **Adding Transactions**
 
-`self.transactions = []` - list of transactions to be created in the init method and before the `self.create_block` function
+`self.transactions = []` - list of transactions to be created in the *init* method and before the `self.create_block` function
 
 `add_transaction(self, sender, receiver, amount)` - method for adding transactions
 
@@ -44,7 +44,7 @@ Libraries imported into Python and used throughout the codebase:
 
 `add_node(self, address)` - add node method for adding a new node to the network 
 
-`replace_chain(self):` - required to apply the consensus by replacing chain with the longest one. The method contains `self` as the function is called in a specific node. 
+`replace_chain(self):` - required to apply the consensus by replacing chain with the longest one. The method contains *self* as the function is called in a specific node. 
 
 ## Setting Up Nodes in Postman
 
