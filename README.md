@@ -1,9 +1,9 @@
 # Nexycoin
 Example Cryptocurrency elaborating on my [general-purpose-blockchain](https://github.com/lukegniwecki/general-purpose-blockchain) repo.
 
-The code includes addition of `transactions` as well as a few new classess and functions (see below). 
+The code includes the addition of *transactions* as well as a few new classess and functions (see below). 
 
-The currency uses the Proof of Work consensus mechanism. 
+This cryptocurrency uses the Proof of Work consensus mechanism. 
 
 ## Required
 **Python 3.6**
@@ -48,10 +48,13 @@ Libraries imported into Python and used throughout the codebase:
 
 The above method contains *self* as the function is called in a specific node.
 
-## Setting Up Nodes in Postman
+**Updating the Mining Function**
 
+`lockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function. Receiver is the *miner* whereas *amount* is the mining reward. 
 
-## Testing Nexycoin
+## Setting Up Nodes (Decentralising Nexycoin)
+
+## Testing 
 
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask.
