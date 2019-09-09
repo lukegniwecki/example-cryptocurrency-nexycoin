@@ -48,11 +48,13 @@ Libraries imported into Python and used throughout the codebase:
 
 The above method contains *self* as the function is called in a specific node.
 
-**Updating the Mining Function**
-
+**Specifying Mining Reward**
 `blockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function (*receiver* = miner; *amount* = mining reward). 
 
 ## Setting Up Nodes (Decentralising Nexycoin)
+
+`node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
+
 
 ## Testing 
 
@@ -71,4 +73,7 @@ Postman requests used to query the blockchain, add transactions and apply the co
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks: http://127.0.0.1:5000/is_chain_valid 
 
 ### POST  
+
+**Add Transaction**
+- Announces the transaction on the blockchain: http://127.0.0.1:5001/add_transaction 
 
