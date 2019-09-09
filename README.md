@@ -72,7 +72,13 @@ Postman requests used to query the blockchain, add transactions and apply the co
 **Is Chain Valid:** http://127.0.0.1:5001/is_chain_valid 
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks
 
+**Replace Chain:** http://127.0.0.1:5001/replace_chain 
+- Replaces the chain with the longest chain if the chain on the noode in question isn't up to date
+
 ### POST  
 
 **Add Transaction:** http://127.0.0.1:5001/add_transaction 
 - Announces the transaction onto the blockchain
+
+**Connect Node:** http://127.0.0.1:5001/connect_node 
+- Decentralises the network by connnecting nodes with each other
