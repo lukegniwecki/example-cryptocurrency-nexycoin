@@ -57,12 +57,14 @@ The above method contains *self* as the function is called in a specific node.
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
 ## Running the Blockchain and Creating Transactions
-The included *.json* files contain (1) example node addresses (*nodes.json*) and the format of the transaction (*trasnactions.json*). 
+The included *.json* files contain (1) example node addresses (*nodes.json*) and the format of the transaction (*transactions.json*). 
 
 There are three nodes in this example crypto currecny using the following flask addresses and ports: 
 
 **Node 1:** http://127.0.0.1:5001/ 
+
 **Node 2:** http://127.0.0.1:5002/ 
+
 **Node 3:** http://127.0.0.1:5003/  
 
 ## Requests 
