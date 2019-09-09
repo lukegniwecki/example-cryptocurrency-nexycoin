@@ -57,7 +57,7 @@ The above method contains *self* as the function is called in a specific node.
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
 ## Running the Blockchain and Creating Transactions
-The included *.json* files contain (1) example node addresses (*nodes.json*) and the format of the transaction (*transactions.json*). 
+The included *.json* files contain (1) example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the format of the transaction (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
 
 There are three nodes in this example cryptocurrecncy which use the following Flask addresses and ports: 
 
@@ -67,7 +67,13 @@ There are three nodes in this example cryptocurrecncy which use the following Fl
 
 - **Node 3:** http://127.0.0.1:5003/  
 
+Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the currecny, mine blocks, send transactions and apply the consennsus: 
 
+- **Node 1:** *[nexycoin_node_1_5001.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_1_5001.py)*
+
+- **Node 2:** *[nexycoin_node_2_5002.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_2_5002.py)*
+
+- **Node 3:** *[nexycoin_node_1_5003.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_3_5003.py)*
 
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
