@@ -75,4 +75,4 @@ Postman requests used to query the blockchain, add transactions and apply the co
 ### POST  
 
 **Add Transaction:** http://127.0.0.1:5001/add_transaction 
-- Announces the transaction on the blockchain
+- Announces the transaction onto the blockchain
