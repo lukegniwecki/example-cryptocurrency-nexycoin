@@ -32,12 +32,12 @@ Libraries imported into Python and used throughout the codebase:
 - urlparse (from urllib.parse) - needed to parse the URL of each of the nodes
 
 ## Converting Blockchain into Cryptocurrency 
-**Adding Transactions**
+**1. Adding Transactions**
 `self.transactions = []` - list of transactions to be created in the *init* method and before the `self.create_block` function
 
 `add_transaction(self, sender, receiver, amount)` - method for adding transactions
 
-**Creating Consensus**
+**2. Creating Consensus**
 `self.nodes = set()` - node for the init method (must be an empty set)
 
 `add_node(self, address)` - add node method for adding a new node to the network 
@@ -46,7 +46,7 @@ Libraries imported into Python and used throughout the codebase:
 
 The above method contains *self* as the function is called in a specific node.
 
-**Specifying Mining Reward**
+**3. Specifying Mining Reward**
 `blockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function 
 
 *receiver* = miner 
