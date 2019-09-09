@@ -6,15 +6,15 @@ The code includes addition of `transactions` as well as a few new classess and f
 ## Required
 Python 3.6
 
-Flask: install in terminal 
+**Flask:** install in terminal 
 ```pip install Flask==0.12.2```
 
 Flask quickstart guide: ```https://flask.palletsprojects.com/en/1.0.x/quickstart/```
 
-Requests: install in terminal
+**Requests:** install in terminal
 ```pip install requests==2.18.4```
 
-Postman HTTP Client
+**Postman HTTP Client:**
 ```https://www.getpostman.com```
 
 ## Libraries
