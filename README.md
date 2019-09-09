@@ -49,12 +49,12 @@ Libraries imported into Python and used throughout the codebase:
 The above method contains *self* as the function is called in a specific node.
 
 **Specifying Mining Reward**
+
 `blockchain.add_transaction(sender = node_address, receiver = 'Luke G.', amount = 10` - update to the `mine_block():` function (*receiver* = miner; *amount* = mining reward). 
 
 ## Setting Up Nodes (Decentralising Nexycoin)
 
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
-
 
 ## Testing 
 
