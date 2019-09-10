@@ -111,7 +111,7 @@ By sending the request, the trasnaction is broadcast to the network.
 
 3. You must now mine a block on Node 1 by sending the `http://127.0.0.1:5001/mine_block` request. This welcomes the transaction and adds it to the Nexycoin blockchain. 
  
-4. Query the blockchain by sending the get_chain request: `http://127.0.0.1:5001/get_chain`. Postman will return the current state of the blockchain showing the newly mined block including the transcation. 
+4. Query the blockchain by sending the get_chain request: `http://127.0.0.1:5001/get_chain`. Postman will return the current state of the blockchain showing the newly mined block containing the transcation. 
 
 ### Applying the Consensus
 
