@@ -1,5 +1,5 @@
 # Nexycoin
-Example Cryptocurrency elaborating on my [general-purpose-blockchain](https://github.com/lukegniwecki/general-purpose-blockchain) repo.
+Nexycoin is an example cryptocurrency elaborating on my [general-purpose-blockchain](https://github.com/lukegniwecki/general-purpose-blockchain) repo.
 
 The code includes the addition of *transactions* as well as a few new classess and functions (see below). 
 
@@ -56,14 +56,14 @@ The above method contains *self* as the function is called in a specific node.
 
 *amount* = mining reward
 
-**4. Creating Unique Node Address**
+**4. Creating Unique Node Addresses**
 
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
-## Running the Blockchain and Creating Transactions
+## Running the Blockchain, Creating Transactions and Applying Consensus
 The included *.json* files contain example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the format of the transaction (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
 
-There are three nodes in this example cryptocurrency. The use the following Flask addresses and ports: 
+There are three nodes in this example cryptocurrency. All use the following Flask addresses and ports: 
 
 - **Node 1:** http://127.0.0.1:5001/ 
 
@@ -71,7 +71,7 @@ There are three nodes in this example cryptocurrency. The use the following Flas
 
 - **Node 3:** http://127.0.0.1:5003/  
 
-Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the Nexycoin, mine blocks, send transactions and apply the consennsus: 
+Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the Nexycoin, mine blocks, send transactions and apply the consensus:
 
 - **Node 1:** *[nexycoin_node_1_5001.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_1_5001.py)*
 
@@ -79,7 +79,24 @@ Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/exampl
 
 - **Node 3:** *[nexycoin_node_1_5003.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_3_5003.py)*
 
-Connecting nodes
+### Connecting the Nodes
+
+Before creating transactions, nodes have to be connected with each other. To connect a node, create a POST request in Postman in the Json format, for example, for Node 1 send `http://127.0.0.1:5001/connect_node` with addresses of other nodes on the network as included in *[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*:
+
+`{
+    
+    "nodes": ["http://127.0.0.1:5002",
+    
+              "http://127.0.0.1:5003"]
+              
+}`
+
+If successful, the Postman will display a success message stating that the nodes are now connected showing a addresses. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from it. 
+
+
+
+
+nodes
 addign transactions  
 Mining blocks  
 Replacing chain
