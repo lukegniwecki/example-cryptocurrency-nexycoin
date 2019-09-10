@@ -101,13 +101,13 @@ If successful, the Postman will display a success message stating that the nodes
     "receiver": "",
     "amount": 10   
 ```
-   *sender* = sender's public key. Any arbitrary number or name can be used in this example.
+*sender* = sender's public key. Any arbitrary number or name can be used in this example.
 
-   *receiver* = receiver's public key. Same as above. 
+*receiver* = receiver's public key. Same as above. 
 
-   *amount* = the amount of Nexycoin you want to send 
+*amount* = the amount of Nexycoin you want to send 
 
-   By sending the request, the trasnaction is broadcast to the network. 
+By sending the request, the trasnaction is broadcast to the network. 
 
 3. You must now mine a block on Node 1 by sending the `http://127.0.0.1:5001/mine_block` request. This welcomes the transaction and adds it to the Nexycoin blockchain. 
  
