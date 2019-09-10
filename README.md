@@ -83,13 +83,11 @@ Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/exampl
 
 Before creating transactions, nodes have to be connected with each other. To connect a node, create a POST request in Postman in the Json format, for example, for Node 1 send `http://127.0.0.1:5001/connect_node` with addresses of other nodes on the network as included in *[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*:
 
-`{
     
     "nodes": ["http://127.0.0.1:5002",
     
               "http://127.0.0.1:5003"]
-              
-}`
+       
 
 If successful, the Postman will display a success message stating that the nodes are now connected showing a addresses. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from it. 
 
