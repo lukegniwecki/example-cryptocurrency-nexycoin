@@ -105,7 +105,7 @@ If successful, the Postman will display a success message stating that the nodes
 
 *receiver* = receiver's public key. Same as above. 
 
-*amount* = amount of Nexycoin you want to send 
+*amount* = the amount of Nexycoin you want to send 
 
 By sending the request, the trasnaction is broadcast to the network. 
 
@@ -113,13 +113,11 @@ By sending the request, the trasnaction is broadcast to the network.
  
 4. Query the blockchain by sending the get_chain request: `http://127.0.0.1:5001/get_chain`. Postman will return the current state of the blockchain showing the newly mined block including the transcation. 
 
-6. You will see the mined block showing the new transaction first and the 10 myfirstcoin mining reward for the mining effort
-7. Now Node 1 has length 3 in the chain and Node 2 and Node 3 have shorter chains
-8. Apply the consensus by using the get chain request to replace Node 2 and Node 3 chains with the longest one from Node 1
-9. You can double check and replace chain on Node 2 again to see a message confirming the chain is the longest  
+### Applying the Consensus
 
-Mining blocks  
-Replacing chain
+Since the transaction was added to the block by Node 1, the length of Node 2 and Node 3 chains is shorter. To apply the consensus use the `replace_chain` request. For example, on Node 2 send `http://127.0.0.1:5002/replace_chain` to replace the chain with the longest one (Node 1 chain). If successful a message confirming that the chain has been replaced by the longest one will appear. 
+
+See below for the list of all requests used in this example.
 
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
