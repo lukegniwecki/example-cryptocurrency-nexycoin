@@ -63,7 +63,7 @@ The above method contains *self* as the function is called in a specific node.
 ## Running the Blockchain, Creating Transactions and Applying the Consensus
 The included *.json* files contain example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the transaction format (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
 
-There are three nodes in this example cryptocurrency. All use the following Flask addresses and ports: 
+There are three nodes in this example cryptocurrency. They use the following addresses and ports (Flask): 
 
 - **Node 1:** http://127.0.0.1:5001/ 
 
