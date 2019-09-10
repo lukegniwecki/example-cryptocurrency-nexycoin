@@ -117,7 +117,7 @@ By sending the request, the trasnaction is broadcast to the network.
 
 Since the transaction was added to the block by Node 1, Node 2 and Node 3 have shorter chains. To apply the consensus use the `replace_chain` request. For example, on Node 2 send `http://127.0.0.1:5002/replace_chain` to replace the chain with the longest one (Node 1 chain). If successful a message confirming that the chain has been replaced by the longest one will appear. 
 
-See below for the list of all requests used in this example.
+See below for the list of all requests you can use to interact with Nexycoin.
 
 ## Requests 
 Postman requests used to query the blockchain, add transactions and apply the consensus once the application is running on Flask. Port `5001`has been used in this example (*Node 1*). 
