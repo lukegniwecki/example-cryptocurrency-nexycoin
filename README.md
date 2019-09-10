@@ -60,8 +60,8 @@ The above method contains *self* as the function is called in a specific node.
 
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
-## Running the Blockchain, Creating Transactions and Applying Consensus
-The included *.json* files contain example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the format of the transaction (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
+## Running the Blockchain, Creating Transactions and Applying the Consensus
+The included *.json* files contain example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the transaction format (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
 
 There are three nodes in this example cryptocurrency. All use the following Flask addresses and ports: 
 
@@ -91,17 +91,28 @@ Before adding transactions and applying the consensus, the nodes have to be conn
 
 If successful, the Postman will display a success message stating that the nodes are now connected showing addresses of all connected nodes. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from the node itself. Do the same for Nodes 2 and 3.
 
-### Adding Transcations 
+### Adding Transactions 
 
-To add a transcation, copy the content from the *[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)* and POST a `http://127.0.0.1:5001/add_transaction` request in Postman the JSON format:
+1. Send the `mine_block` request to mine a couple of blocks on Node 1.
 
-The trasnaction has now been broadcast to the node. 
+2. To add a transcation, copy the content from the *[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)* and POST a `http://127.0.0.1:5001/add_transaction` request in Postman in the JSON format:
+```
+    "sender": "",
+    "receiver": "",
+    "amount": 10   
+```
+*sender* = sender's public key. Any arbitrary number or name can be used in this example.
+
+*receiver* = receiver's public key. Same as above. 
+
+*amount* = amount of Nexycoin you want to send 
+
+By sending the request, the trasnaction is broadcast to the network. 
+
+3. You must now mine a block on Node 1 by sending the `http://127.0.0.1:5001/mine_block` request. This welcomes the transaction and adds it to the Nexycoin blockchain. 
  
+4. Query the blockchain by sending the get_chain request: `http://127.0.0.1:5001/get_chain`. Postman will return the current state of the blockchain showing the newly mined block including the transcation. 
 
-
-3. Sender and receiver are public keys - for the purposes of the demo use real names 
-4. POST the request 
-5. Mine a block to welcome the transaction and  add it to the blockchain (mine the block on the same node)
 6. You will see the mined block showing the new transaction first and the 10 myfirstcoin mining reward for the mining effort
 7. Now Node 1 has length 3 in the chain and Node 2 and Node 3 have shorter chains
 8. Apply the consensus by using the get chain request to replace Node 2 and Node 3 chains with the longest one from Node 1
