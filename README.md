@@ -79,7 +79,7 @@ Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/exampl
 
 - **Node 3:** *[nexycoin_node_1_5003.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_3_5003.py)*
 
-### Connecting the Nodes
+### Connecting Nodes
 
 Before adding transactions and applying the consensus, the nodes have to be connected with each other. To connect a node, create a POST request in Postman in the JSON format, for example, for Node 1 send `http://127.0.0.1:5001/connect_node` with addresses of Nodes 2 and 3 as included in *[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*:
 
