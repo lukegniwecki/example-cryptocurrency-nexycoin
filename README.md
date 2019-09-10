@@ -105,7 +105,7 @@ If successful, the Postman will display a success message stating that the nodes
 
 *receiver* = receiver's public key. Same as above. 
 
-*amount* = the amount of Nexycoin you want to send 
+*amount* = the amount of Nexycoin you want to send e.g. 10
 
 By sending the request, the trasnaction is broadcast to the network. 
 
