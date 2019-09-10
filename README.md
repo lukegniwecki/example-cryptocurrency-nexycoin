@@ -115,7 +115,7 @@ By sending the request, the trasnaction is broadcast to the network.
 
 ### Applying the Consensus
 
-Since the transaction was added to the block by Node 1, the length of Node 2 and Node 3 chains is shorter. To apply the consensus use the `replace_chain` request. For example, on Node 2 send `http://127.0.0.1:5002/replace_chain` to replace the chain with the longest one (Node 1 chain). If successful a message confirming that the chain has been replaced by the longest one will appear. 
+Since the transaction was added to the block by Node 1, Node 2 and Node 3 have shorter chains. To apply the consensus use the `replace_chain` request. For example, on Node 2 send `http://127.0.0.1:5002/replace_chain` to replace the chain with the longest one (Node 1 chain). If successful a message confirming that the chain has been replaced by the longest one will appear. 
 
 See below for the list of all requests used in this example.
 
