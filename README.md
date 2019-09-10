@@ -60,7 +60,7 @@ The above method contains *self* as the function is called in a specific node.
 
 `node_address = str(uuid4()).replace('-', '')` - creates a unique node address using the *uuid* library
 
-## Running the Blockchain, Creating Transactions and Applying the Consensus
+## Decentralising the Blockchain, Creating Transactions and Applying the Consensus
 The included *.json* files contain example node addresses (*[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*) and the transaction format (*[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)*). 
 
 There are three nodes in this example cryptocurrency. They use the following addresses and ports (Flask): 
