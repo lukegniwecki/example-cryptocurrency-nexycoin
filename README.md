@@ -81,7 +81,7 @@ Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/exampl
 
 ### Connecting the Nodes
 
-Before creating transactions, nodes have to be connected with each other. To connect a node, create a POST request in Postman in the Json format, for example, for Node 1 send `http://127.0.0.1:5001/connect_node` with addresses of other nodes on the network as included in *[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*:
+Before adding transactions and applying the consensus, the nodes have to be connected with each other. To connect a node, create a POST request in Postman in the JSON format, for example, for Node 1 send `http://127.0.0.1:5001/connect_node` with addresses of Nodes 2 and 3 as included in *[nodes.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nodes.json)*:
 
     
     "nodes": ["http://127.0.0.1:5002",
@@ -89,13 +89,24 @@ Before creating transactions, nodes have to be connected with each other. To con
               "http://127.0.0.1:5003"]
        
 
-If successful, the Postman will display a success message stating that the nodes are now connected showing a addresses. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from it. 
+If successful, the Postman will display a success message stating that the nodes are now connected showing addresses of all connected nodes. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from the node itself. Do the same for Nodes 2 and 3.
+
+### Adding Transcations 
+
+To add a transcation, copy the content from the *[transaction.json](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/transaction.json)* and POST a `http://127.0.0.1:5001/add_transaction` request in Postman the JSON format:
+
+The trasnaction has now been broadcast to the node. 
+ 
 
 
+3. Sender and receiver are public keys - for the purposes of the demo use real names 
+4. POST the request 
+5. Mine a block to welcome the transaction and  add it to the blockchain (mine the block on the same node)
+6. You will see the mined block showing the new transaction first and the 10 myfirstcoin mining reward for the mining effort
+7. Now Node 1 has length 3 in the chain and Node 2 and Node 3 have shorter chains
+8. Apply the consensus by using the get chain request to replace Node 2 and Node 3 chains with the longest one from Node 1
+9. You can double check and replace chain on Node 2 again to see a message confirming the chain is the longest  
 
-
-nodes
-addign transactions  
 Mining blocks  
 Replacing chain
 
