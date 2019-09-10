@@ -89,7 +89,7 @@ Before adding transactions and applying the consensus, the nodes have to be conn
               "http://127.0.0.1:5003"]
        
 
-If successful, the Postman will display a success message stating that the nodes are now connected showing addresses of all connected nodes. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from the node itself. Do the same for Nodes 2 and 3.
+If successful, the Postman will display a success message stating that the nodes are now connected showing the addresses of all connected nodes. Note that Node 1 port `5001` is not inlcuded in the `connect_node` request since the request is sent from the node itself. Do the same for Nodes 2 and 3.
 
 ### Adding Transactions 
 
