@@ -134,7 +134,7 @@ Postman requests used to query the blockchain, add transactions and apply the co
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks
 
 **Replace Chain:** http://127.0.0.1:5001/replace_chain 
-- Replaces the chain with the longest chain if the chain on the noode in question isn't up to date
+- Replaces the chain with the longest chain if the chain on the node in question isn't up to date i.e. isnt' the longest
 
 ### POST  
 
