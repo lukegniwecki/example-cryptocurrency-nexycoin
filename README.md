@@ -142,4 +142,4 @@ Postman requests used to query the blockchain, add transactions and apply the co
 - Announces the transaction onto the blockchain
 
 **Connect Node:** http://127.0.0.1:5001/connect_node 
-- Decentralises the network by connnecting nodes with each other
+- Decentralises the blockchain by connnecting nodes with each other
