@@ -71,7 +71,7 @@ There are three nodes in this example cryptocurrency. They use the following add
 
 - **Node 3:** http://127.0.0.1:5003/  
 
-Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the Nexycoin, mine blocks, send transactions and apply the consensus:
+Copies of the source (*[nexycoin_core.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_core.py)*) have been created so we can decentralise the Nexycoin blockchain, mine blocks, send transactions and apply the consensus:
 
 - **Node 1:** *[nexycoin_node_1_5001.py](https://github.com/lukegniwecki/example-cryptocurrency-nexycoin/blob/master/nexycoin_node_1_5001.py)*
 
