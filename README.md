@@ -128,7 +128,7 @@ Postman requests used to query the blockchain, add transactions and apply the co
 **Mine Block:** http://127.0.0.1:5001/mine_block
 - Mines a new block
 
-**Is Chain Valid:** http://127.0.0.1:5001/is_chain_valid 
+**Is Chain Valid:** http://127.0.0.1:5001/is_valid 
 - Checks if Blockchain is valid i.e. if all previous hashes match with corresponding blocks
 
 **Replace Chain:** http://127.0.0.1:5001/replace_chain 
